@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+          <meta charset="UTF-8">
+          <meta name="description" content="This is an awesome website">
+          <link rel="stylesheet" href="/stylesheets/header.css"/>
+          <link rel="stylesheet" href="/stylesheets/page3.css"/>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
+          <title>Over ons</title>
+        </head>
+        <Body>
+          <header style="display: block;">
+              <div class="navigatie">
+                <ul>
+                  <li class="list">
+                    <a href="/">
+                      <span class="icoon"><ion-icon name="heart-outline"></ion-icon></span>
+                      <span class="tekst">Welkom</span>
+                    </a>
+                  </li>
+                </ul>    
+                <ul>
+                  <li class="list">
+                    <a href="/programma">
+                      <span class="icoon"><ion-icon name="newspaper-outline"></ion-icon></span>
+                      <span class="tekst">Programma</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="list">
+                    <a href="/RSVP">
+                      <span class="icoon"><ion-icon name="checkmark-circle-outline"></ion-icon></span>
+                      <span class="tekst">RSVP</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="list">
+                    <a href="/diner">
+                      <span class="icoon"><ion-icon name="restaurant-outline"></ion-icon></span>
+                      <span class="tekst">Diner</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="list">
+                    <a href="/overnachting">
+                      <span class="icoon"><ion-icon name="bed-outline"></ion-icon></span>
+                      <span class="tekst">Overnachting</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="logout">
+                <form action="/logout?_method=DELETE" method="POST">
+                  <button class="buttonLogout" type="submit"><ion-icon name="log-out-outline"></ion-icon></button>
+                </form>
+            </div>
+              <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+              <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+          </header>

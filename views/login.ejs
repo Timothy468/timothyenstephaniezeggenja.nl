@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/stylesheets/index.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
+    <title>Welkom</title>
+  </head>
+  
+  <body>
+    <% if (messages.error) { %>
+      <%= messages.error %>
+    <% } %>
+    <header>
+      <ul>
+        <li><img class="header-img" src="/images/st1.jpg" width="12%"></li>
+        <li><img class="header-img" src="/images/st2.jpg" width="12%"></li>
+        <li><img class="header-img" src="/images/st3.jpg" width="12%"></li>
+        <li><img class="header-img" src="/images/st4.jpg" width="12%"></li>
+        <li><img class="header-img" src="/images/st5.jpg" width="12%"></li>
+        <li><img class="header-img" src="/images/st6.jpg" width="12%"></li>
+        <li><img class="header-img" src="/images/st7.jpg" width="12%"></li>
+        <li><img class="header-img" src="/images/st8.jpg" width="12%"></li>
+      </ul>
+    </header>
+    <main>
+      <div class="center">
+        <form action="/login" method="POST">
+          <h1>Inloggen</h1>
+          <div class="txt_field">
+            <input type="name" id="name" name="name" required>
+            <span></span>
+            <label for="name">Gebruikersnaam</label>
+          </div>
+          <div class="txt_field">
+            <input type="password" id="password" name="password" required>
+            <span></span>
+            <label for="password">wachtwoord</label>
+          </div>
+          <input type="submit" value="Inloggen">
+        </form>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
+
+</html>

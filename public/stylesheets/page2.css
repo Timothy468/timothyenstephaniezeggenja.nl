@@ -1,0 +1,14 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/bg5.jpeg);
+}
+
+body { 
+    height: 100vh;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
