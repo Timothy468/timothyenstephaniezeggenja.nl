@@ -1,9 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Courgette);
 *
-{
-    margin: 0;
-    padding: 0;
-}
 
 header{
     display: flex;
@@ -51,12 +47,19 @@ header{
     align-items: center;
     border-radius: 10px;
 }
+
+
 .navigatie ul{
     display: flex;
     width: 350px;
+    margin: 0;
+    padding: 0;
 }
+
 .navigatie ul li{
     position: relative;
+    margin: 0;
+    padding: 0;
     list-style: none;
     width: 70px;
     height: 70px;

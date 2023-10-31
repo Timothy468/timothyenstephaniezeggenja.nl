@@ -9,10 +9,10 @@ function initialize(passport, getUserByName, getUserById) {
     }
 
     try {
-      if (await bcrypt.compare(password, user.password)) {
+      if (password == user.password) {
         return done(null, user)
       } else {
-        return done(null, user, { message: 'Password fixed' })
+        return done(null, false, { message: 'wrong Password' })
       }
     } catch (e) {
       return done(e)

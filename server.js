@@ -14,7 +14,8 @@ const initializePassport = require('./passport-config')
 initializePassport(
     passport,
     name => users.find(user => user.name === name),
-    id => users.find(user => user.id === id)
+    id => users.find(user => user.id === id),
+    password => users.find(user => user.password === password)
     )
 
 const app = express()
@@ -23,6 +24,10 @@ const users = [{
   id: process.env.USER_ID,
   name: process.env.USER_NAME,
   password: process.env.USER_PASSWORD,
+}, {
+  id: process.env.USER_ID2,
+  name: process.env.USER_NAME2,
+  password: process.env.USER_PASSWORD2,
 }]
 
 app.set('view-engine', 'ejs')
